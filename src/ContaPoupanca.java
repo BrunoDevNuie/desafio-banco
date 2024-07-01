@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class ContaPoupanca {
+public class ContaPoupanca extends Conta{
+    @Override
+    public void imprimirExtrato() {
+        System.out.println("#### EXTRATO DE CONTA POUPANCA ####");
+        super.imprimirInfosComuns();
+    }
 }
